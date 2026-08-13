@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+{
+	"name": "Ejemplo Dev Container",
+	// Use image or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/dotnet:2-10.0-noble",
+
+	"features": {
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	},
+
+	//"postStartCommand": "dotnet dev-certs https --trust",
+
+	// "forwardPorts": [5001],
+
+	// "portsAttributes": {
+	//		"5001": {
+	//			"protocol": "https"
+	//		}
+	// }
+
+	"customizations": {
+        "jetbrains": {
+            "settings": {
+            }, 
+			"plugins" : [
+            ]
+        },
+    	"vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+				"GitHub.copilot",
+    			"GitHub.copilot-chat"
+            ]
+        }
+    }
+}
